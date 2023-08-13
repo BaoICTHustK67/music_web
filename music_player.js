@@ -30,7 +30,7 @@ const app = {
         {
             name: "Monody",
             singer : "TheFatRat",
-            audio_path : "/song-audio/X2Download.app-TheFatRat\ -\ Monody\ \(feat.\ Laura\ Brehm\)-\(480p\).mp4",
+            audio_path : "song-audio/X2Download.app-TheFatRat\ -\ Monody\ \(feat.\ Laura\ Brehm\)-\(480p\).mp4",
             image : "/song-photo/1509514275012_640.jpg"
         },
         {
