@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="music_player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div class="music-player">
+             <!-- Dash Board -->
+            <div class="dash-board">
+                <!--header-->
+                <header>
+                    <div class="title">Now playing : </div>
+                    <h2 class="song-name">Nevada</h2>
+                </header>
+                <div class="song-photo"></div>
+                <!-- Control btn-->
+                <div class="control-btn">
+                    <div class="btn-item" id="replay">
+                        <i class="btn-icon fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="btn-item" id="prev">
+                        <i class="btn-icon fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn-item active" id="pause">
+                        <i class="btn-icon fa-solid fa-pause"></i>
+                        <i class="btn-icon fa-solid fa-play"></i>
+                    </div>
+                    <div class="btn-item" id="next">
+                        <i class="btn-icon fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn-item" id="random">
+                        <i class="btn-icon fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+                    <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+                <audio id="audio" src=""></audio>
+            </div>
+                    <!-- Play list -->
+            <div class="play-list">
+            </div>
+        </div>
+        <div class="volumne">
+            <div class="mute">
+                <i class="fa-solid fa-volume-high" id="mute"></i>
+                <i class="fa-solid fa-volume-xmark" id="un-mute"></i>
+            </div>
+            <input type="range" id="volumne" class="volumne" value="100" step="1" min="0" max="100">
+        </div>
+        <div class="view-mode--adjust">
+            <div class="moon-container">
+                <i class="fa-solid fa-moon" id="dark-moon"></i>
+                <i class="fa-regular fa-moon" id="light-moon"></i>
+            </div>
+            <div class="sun-container enabled">
+                <i class="fa-solid fa-sun" id="dark-sun"></i>
+                <i class="fa-regular fa-sun" id="light-sun"></i>
+            </div>
+        </div>
+    </div>
+        
+    <script src="music_player.js"></script>
+</body>
+</html>
